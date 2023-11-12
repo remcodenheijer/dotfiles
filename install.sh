@@ -48,3 +48,10 @@ cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 mkdir -p "$XDG_CONFIG_HOME/git"
 ln -sf "$DOTFILES/git/config" "$XDG_CONFIG_HOME/git"
 
+########
+# tmux #
+########
+
+mkdir -p "$XDG_CONFIG_HOME/tmux"
+ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
+
