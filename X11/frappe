@@ -36,10 +36,15 @@ URxvt.color7: #B5BFE2
 URxvt.color15: #A5ADCE
 
 !! URxvt Appearance
-URxvt*font: xft:Inconsolata Nerd Font Mono:style=Medium:size=14:pixelsize=16:antialias=true
-URxvt*borderLess: false
-URxvt*externalBorder: 0
-URxvt*internalBorder: 4
-URxvt*scrollBar: false
-URxvt*saveLines: 5000
-
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false

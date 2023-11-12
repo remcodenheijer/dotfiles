@@ -25,3 +25,10 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+set termguicolors
+call plug#begin()
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+call plug#end()
+
+colorscheme catppuccin-frappe
+
