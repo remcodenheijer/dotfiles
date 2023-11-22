@@ -195,7 +195,6 @@ set $i3lockwall sh ~/.config/i3/scripts/lock.sh
 bindsym $mod+CTRL+Shift+l exec --no-startup-id $i3lockwall
 
 # shutdown / restart / suspend...
-
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (CTRL+s) shutdown
 
 mode "$mode_system" {
@@ -266,6 +265,11 @@ set_from_resource $white2 color15 #ffffff
 # hide borders
 hide_edge_borders both
 
+# hide window title bar
+default_border pixel 1
+default_floating_border pixel 1
+for_window [class="^.*"] border pixel 1
+
 # class border backgr. text indicator child_border 
 client.focused 		#333333 $black2 $white2 #285577
 client.focused_inactive #333333 $background $foreground #484e50
@@ -284,7 +288,6 @@ exec urxvtc -name urxvt_scratchpad
 for_window [instance="htop_scratchpad"] move to scratchpad, border none
 bindsym $mod+Shift+p [instance="htop_scratchpad"] scratchpad show
 exec urxvtc -name htop_scratchpad -e htop
-
 
 # display configuration
 set $mode_display Config monitor resolution - Default config (d)

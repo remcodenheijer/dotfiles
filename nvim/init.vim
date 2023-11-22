@@ -5,6 +5,12 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+inoremap jk <Esc>
+vnoremap jk <Esc>
+
+nnoremap H ^
+nnoremap L $
+
 " no swap file
 set noswapfile
 

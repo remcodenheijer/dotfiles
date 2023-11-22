@@ -57,3 +57,5 @@ bindkey -s '^g' 'clear\n'
 
 # Keep at bottom of file
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+if [ -z $TMUX ]; then; tmux; fi

@@ -1,0 +1,5 @@
+lnks Git Repository https://github.com/hamvocke/lnks
+Linux PC Build https://www.paolomainardi.com/posts/linux-workstation-build/
+Zathura Cheatsheet https://www.maketecheasier.com/cheatsheet/zathura-keyboard-shortcuts/
+Kindle https://read.amazon.com/kindle-library
+CSS Course https://courses.joshwcomeau.com/
