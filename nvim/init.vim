@@ -20,21 +20,18 @@ set undodir=$HOME/.config/nvim/undo
 set undolevels=10000
 set undoreload=10000
 
-" set line number
-set number
-
-" use 4 spaces instead of tab
-" copy indent from current line when starting a new line
-set autoindent
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-
 set termguicolors
+
 call plug#begin()
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'echasnovski/mini.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
 colorscheme catppuccin-frappe
+
+lua require('mini')
+lua require('telescope')
 
