@@ -6,10 +6,7 @@
 
 mkdir -p "$XDG_CONFIG_HOME/nvim"
 mkdir -p "$XDG_CONFIG_HOME/nvim/undo"
-mkdir -p "$XDG_CONFIG_HOME/nvim/lua"
-ln -sf "$DOTFILES/nvim/init.vim" "$XDG_CONFIG_HOME/nvim/init.vim"
-ln -sf "$DOTFILES/nvim/lua/mini.lua" "$XDG_CONFIG_HOME/nvim/lua/mini.lua"
-ln -sf "$DOTFILES/nvim/lua/telescope.lua" "$XDG_CONFIG_HOME/nvim/lua/telescope.lua"
+ln -sf "$DOTFILES/nvim/init.lua" "$XDG_CONFIG_HOME/nvim/init.lua"
 
 #######
 # X11 #
