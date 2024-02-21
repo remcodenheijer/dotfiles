@@ -116,7 +116,6 @@ set $ws10 "10"
 # Always open in workspace
 assign [class="firefox" instance="Navigator"] $ws1
 assign [class="URxvt"] $ws2
-assign [class="Anki"] $ws3
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1

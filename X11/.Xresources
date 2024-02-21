@@ -43,3 +43,7 @@ URxvt*internalBorder: 4
 URxvt*scrollBar: false
 URxvt*saveLines: 5000
 
+!! Set this for a 4k monitor
+! scaling
+! Xft.dpi: 144
+
