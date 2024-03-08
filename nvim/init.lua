@@ -237,6 +237,12 @@ require('lazy').setup({
       { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
+  },
+  {
+      "iamcco/markdown-preview.nvim",
+      cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+      ft = { "markdown" },
+      build = function() vim.fn["mkdp#util#install"]() end,
   }
 }, {})
 
@@ -273,7 +279,7 @@ vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
 vim.o.updatetime = 750
-vim.o.timeoutlen = 300
+vim.o.timeoutlen = 750
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
