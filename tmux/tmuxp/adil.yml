@@ -1,0 +1,26 @@
+session_name: adil
+start_directory: /home/remco/dev/repos/dev.azure.com/remco.den.heijer@ovsoftware.com/ADIL
+windows:
+- window_name: code
+  shell_command_before: nvim .
+  start_directory: /home/remco/dev/repos/dev.azure.com/remco.den.heijer@ovsoftware.com/ADIL
+  focus: true
+  panes:
+    - pane
+- window_name: git
+  shell_command_before: git status 
+  start_directory: /home/remco/dev/repos/dev.azure.com/remco.den.heijer@ovsoftware.com/ADIL
+  focus: false
+  panes:
+    - pane
+- window_name: docker
+  shell_command_before: docker compose up 
+  start_directory: /home/remco/dev/repos/dev.azure.com/remco.den.heijer@ovsoftware.com/ADIL
+  focus: false
+  panes:
+    - pane
+- window_name: dotfiles
+  start_directory: /home/remco/dev/repos/github.com/remcodenheijer@gmail.com/dotfiles
+  focus: false
+  panes:
+    - pane

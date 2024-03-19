@@ -54,6 +54,9 @@ ln -sf "$DOTFILES/git/config" "$XDG_CONFIG_HOME/git"
 mkdir -p "$XDG_CONFIG_HOME/tmux"
 ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 
+mkdir -p "$XDG_CONFIG_HOME/tmux"
+ln -s "$DOTFILES/tmux/tmuxp" "$XDG_CONFIG_HOME"
+
 ###########
 # zathura #
 ###########
