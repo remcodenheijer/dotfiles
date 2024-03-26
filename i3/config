@@ -49,7 +49,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -116,7 +116,7 @@ set $ws10 "10"
 # Always open in workspace
 assign [class="firefox" instance="Navigator"] $ws1
 assign [class="Google-chrome"] $ws1
-assign [class="URxvt"] $ws2
+assign [class="Alacritty"] $ws2
 assign [class="obsidian"] $ws3
 
 # switch to workspace

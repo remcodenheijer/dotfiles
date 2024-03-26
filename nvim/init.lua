@@ -150,7 +150,7 @@ require('lazy').setup({
     name = 'catppuccin',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'catppuccin-frappe'
+      vim.cmd.colorscheme 'catppuccin-mocha'
     end,
   },
 
@@ -548,6 +548,7 @@ local servers = {
   -- clangd = {},
   gopls = {},
   csharp_ls = {},
+  -- omnisharp = {},
   -- pyright = {},
   -- rust_analyzer = {},
   -- tsserver = {},

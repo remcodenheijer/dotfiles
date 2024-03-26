@@ -4,8 +4,10 @@ alias ga='git add'
 alias gaa='git add -A'
 alias gc='git commit'
 alias gp='git push'
+alias gf='git fetch'
 alias gs='git status'
 alias gd='git diff'
+alias gco='git checkout'
 
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index

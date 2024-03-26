@@ -54,8 +54,8 @@ ln -sf "$DOTFILES/git/config" "$XDG_CONFIG_HOME/git"
 mkdir -p "$XDG_CONFIG_HOME/tmux"
 ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 
-mkdir -p "$XDG_CONFIG_HOME/tmux"
-ln -s "$DOTFILES/tmux/tmuxp" "$XDG_CONFIG_HOME"
+mkdir -p "$XDG_CONFIG_HOME/tmux/tmuxp"
+ln -sf "$DOTFILES/tmux/tmuxp" "$XDG_CONFIG_HOME"
 
 ###########
 # zathura #
@@ -63,4 +63,11 @@ ln -s "$DOTFILES/tmux/tmuxp" "$XDG_CONFIG_HOME"
 
 mkdir -p "$XDG_CONFIG_HOME/zathura"
 ln -sf "$DOTFILES/zathura/zathurarc" "$XDG_CONFIG_HOME/zathura/zathurarc"
+
+#############
+# alacritty #
+#############
+
+mkdir -p "$XDG_CONFIG_HOME/alacritty"
+ln -sf "$DOTFILES/alacritty/alacritty.toml" "$XDG_CONFIG_HOME/alacritty/alacritty.toml"
 
