@@ -1,0 +1,19 @@
+session_name: adil
+start_directory: /home/remco/dev/tutorials/rust-1.51-workshop
+windows:
+- window_name: code
+  shell_command_before: nvim .
+  start_directory: /home/remco/dev/tutorials/rust-1.51-workshop
+  focus: true
+  panes:
+    - pane
+- window_name: build
+  start_directory: /home/remco/dev/tutorials/rust-1.51-workshop
+  focus: false
+  panes:
+    - pane
+- window_name: dotfiles
+  start_directory: /home/remco/dev/repos/github.com/remcodenheijer@gmail.com/dotfiles
+  focus: false
+  panes:
+    - pane

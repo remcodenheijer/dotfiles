@@ -1,6 +1,6 @@
 # For dotfiles
 export XDG_CONFIG_HOME="$HOME/.config"
-export DOTFILES="$HOME/dev/repos/github.com/remcodenheijer@gmail.com/dotfiles"
+export DOTFILES="$HOME/dev/per/dotfiles"
 
 # For specific data
 export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
