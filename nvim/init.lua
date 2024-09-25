@@ -3,8 +3,6 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- [[ Install `lazy.nvim` plugin manager ]]
---    https://github.com/folke/lazy.nvim
---    `:help lazy.nvim.txt` for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system {
@@ -200,26 +198,6 @@ require('lazy').setup({
     },
     build = ':TSUpdate',
   },
-
-  -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
-  --       These are some example plugins that I've included in the kickstart repository.
-  --       Uncomment any of the lines below to enable them.
-  -- require 'kickstart.plugins.autoformat',
-  -- require 'kickstart.plugins.debug',
-
-  -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
-  --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping
-  --    up-to-date with whatever is in the kickstart repo.
-  --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  --
-  --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-  -- { import = 'custom.plugins' },
-  --
-  -- {
-  --   'mrcjkb/rustaceanvim',
-  --   version = '^3', -- Recommended
-  --   ft = { 'rust' },
-  -- },
   {
     "christoomey/vim-tmux-navigator",
     cmd = {
@@ -236,17 +214,6 @@ require('lazy').setup({
       { "<c-l>",  "<cmd><C-U>TmuxNavigateRight<cr>" },
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
-  },
-  {
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    ft = { "markdown" },
-    build = function() vim.fn["mkdp#util#install"]() end,
-  },
-  {
-     "m4xshen/hardtime.nvim",
-     dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
-     opts = {}
   },
 }, {})
 
@@ -340,7 +307,6 @@ vim.api.nvim_set_keymap('n', '<Right>', '<Nop>', { noremap = true, silent = true
 
 -- Map 'jk' to Escape in insert and visual modes
 vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', 'jk', '<Esc>', { noremap = true, silent = true })
 
 -- Map 'H' to move to the beginning of the line and 'L' to move to the end of the line in normal mode
 vim.api.nvim_set_keymap('n', 'H', '^', { noremap = true, silent = true })
@@ -550,15 +516,6 @@ require('mason-lspconfig').setup()
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
-  -- clangd = {},
-  -- pyright = {},
-  -- tsserver = {},
-  gopls = {},
-  csharp_ls = {},
-  -- omnisharp = {},
-  rust_analyzer = {},
-  html = { filetypes = { 'html', 'twig', 'hbs' } },
-  terraformls = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
