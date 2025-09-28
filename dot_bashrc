@@ -2,6 +2,8 @@
 # (don't mess with these directly, just overwrite them here!)
 source ~/.local/share/omarchy/default/bash/rc
 
+export SSH_AUTH_SOCK=/home/rdh/.bitwarden-ssh-agent.sock
+
 # Add your own exports, aliases, and functions here.
 #
 # Make an alias for invoking commands you use constantly

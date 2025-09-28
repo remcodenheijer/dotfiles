@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# .chezmoidata.yaml hash: {{ include ".chezmoidata.yaml" | sha256sum }}
+
+# Official packages
+{{- range .packages.official }}
+if ! pacman -Qi "{{ . }}" &> /dev/null; then
+    sudo pacman -S --noconfirm "{{ . }}"
+fi
+{{- end }}
+
+# AUR packages
+{{- range .packages.aur }}
+if ! yay -Qi "{{ . }}" &> /dev/null; then
+    yay -S --noconfirm "{{ . }}"
+fi
+{{- end }}

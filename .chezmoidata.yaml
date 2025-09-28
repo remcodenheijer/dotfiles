@@ -1,0 +1,6 @@
+# ~/.local/share/chezmoi/.chezmoidata.yaml
+packages:
+  official:
+    - yazi
+    - bitwarden
+  aur:
