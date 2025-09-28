@@ -3,4 +3,7 @@ packages:
   official:
     - yazi
     - bitwarden
+    - remmina
+    - freerdp
   aur:
+    - forticlient-vpn
