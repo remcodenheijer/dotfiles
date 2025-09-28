@@ -3,7 +3,10 @@ packages:
   official:
     - yazi
     - bitwarden
+    - bitwarden-cli
     - remmina
     - freerdp
+    - wtype
+    - expect
   aur:
     - forticlient-vpn
