@@ -10,3 +10,6 @@ export SSH_AUTH_SOCK=/home/rdh/.bitwarden-ssh-agent.sock
 # alias p='python'
 #
 alias gc="git commit"
+alias gp="git push"
+alias gs="git status"
+alias ga="git add -A"
