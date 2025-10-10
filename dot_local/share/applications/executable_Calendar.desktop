@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Calendar
+Comment=Calendar
+Exec=omarchy-launch-webapp https://calendar.google.com/calendar/u/1/r?pli=1
+Terminal=false
+Type=Application
+Icon=/home/rdh/.local/share/applications/icons/Calendar.png
+StartupNotify=true
