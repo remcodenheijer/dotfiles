@@ -8,5 +8,9 @@ packages:
     - freerdp
     - wtype
     - expect
+    - minikube
+    - kubectl
   aur:
     - forticlient-vpn
+    - anki
+    - jetbrains-toolbox
